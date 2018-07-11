@@ -1,0 +1,51 @@
+/* CV - exercise for HEPL Technical College
+ *
+ * /src/sass/styles.scss - Main styles
+ *
+ * coded by MullerCedric
+ * started at 25/09/2017
+ */
+
+
+// ITCSS
+// Settings : Font definition, colors, variables, etc
+// Tools : Mixins and functions
+// Generic : Ground-zero styles (Normalize, reset, box-sizing)
+// Base : Bare HTML elements (headings, links, reset list, anchors, etc) -> "redifining browser default styling"
+// Objects : Cosmetic-free/undecorated design patterns (Media Object, containers, grids, global animation, etc)
+// Components : Designed components, specific chunks of UI. UI components are often composed of Objects and Components
+// Trumps : Utilities and helper classes with ability to override anything (hide helper, etc.)
+
+@media screen {
+  @import "settings/_colors";
+  @import "settings/_fonts";
+  @import "settings/_animations";
+
+  @import "tools/_mixins";
+
+  @import "generic/_reset";
+
+  @import "base/_body";
+  @import "base/_headings";
+  @import "base/_links";
+  @import "base/_type";
+
+  @import "objects/_o-wrapper";
+  @import "objects/_o-bloc";
+
+  @import "components/_c-topNav";
+  @import "components/_c-header";
+  @import "components/_c-mainNav";
+  @import "components/_c-mainSection";
+  @import "components/_c-breadcrumbNav";
+  @import "components/_c-mainPicture";
+  @import "components/_c-mainQuote";
+  @import "components/_c-sumNav";
+  @import "components/_c-leftContent";
+  @import "components/_c-rightContent";
+  @import "components/_c-share";
+  @import "components/_c-mainFooter";
+
+
+  @import "trumps/_hidden";
+}

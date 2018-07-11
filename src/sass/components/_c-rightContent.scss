@@ -1,0 +1,21 @@
+.c-rightContent {
+  float: right;
+  box-sizing: border-box;
+  width: 300px;
+
+  &__title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    float: left;
+  }
+  &__stripes {
+    background: url('../images/stripe.png');
+    height: 12px;
+    overflow: hidden;
+    margin-top: 9px;
+  }
+  &__titleWrap {
+    overflow: hidden;
+  }
+}

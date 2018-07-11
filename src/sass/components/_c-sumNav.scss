@@ -1,0 +1,19 @@
+.c-sumNav {
+  display: inline-block;
+  padding: 14px 10px;
+  margin-bottom: 1em;
+  background: $grayishWhite;
+  border: 1px solid $gray;
+  font-size: 95%;
+
+  &__title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+  }
+  &__ol {
+    text-align: left;
+    margin-top: 1em;
+  }
+}

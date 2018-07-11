@@ -1,0 +1,17 @@
+.c-breadcrumbNav {
+  margin-bottom: 12px;
+  border-bottom: 1px solid $lightGray;
+
+  &__li {
+    display: inline-block;
+    &:after {
+      content: "/";
+      display: inline-block;
+      margin: 0 7px 2px;
+    }
+    &:last-child:after {
+      content: "";
+      display: none;
+    }
+  }
+}

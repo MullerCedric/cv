@@ -1,0 +1,87 @@
+.c-mainNav {
+  background: $lightBlack;
+  border-bottom: 5px solid $brown;
+  box-shadow: inset -1px -5px 0px -1px $darkerGray;
+
+  &__li {
+    display: inline-block;
+    border-right: 1px solid $black;
+    position: relative;
+
+    &-has-children {
+      &:hover > ul, &:focus > ul {
+        display: block;
+        animation: fadeInDown .2s ease-in;
+      }
+      &:hover > a:after {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        border: 8px solid transparent;
+        border-bottom-color: $brown;
+        display: block;
+        width: 0;
+        z-index: 200;
+      }
+
+      & > a {
+        padding-right: 20px;
+      }
+      &:after {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        right: 7px;
+        top: 45%;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-top: 4px solid #bbb;
+      }
+    }
+    &--current {
+      transform: translateY(-5px);
+      height: 42px;
+      border: none;
+      background-color: $brown;
+    }
+  }
+  &__a {
+    display: inline-block;
+    position: relative;
+    color: $lightGray;
+    padding: 13px 10px;
+    border-left: 1px solid $darkerGray; //à ajouter uniquement sur les liens principaux, pas les "subs"
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+    &--current {
+      border: none;
+      height: 26px;
+      background-color: $brown;
+    }
+  }
+
+  &__subMenu {
+    width: 200px;
+    z-index: 250;
+    position: absolute;
+    border-top: 2px solid $brown;
+    background: $lightBlack;
+    box-shadow: 0 3px 4px 1px $shadow;
+    display: none;
+    a{
+      padding: 7px 20px 7px 7px;
+      transition: padding 0.3s ease;
+    }
+    a:hover {
+      padding-left: 15px;
+    }
+  }
+  &__subItem {
+    border-bottom: 1px solid $darkerGray;
+  }
+}

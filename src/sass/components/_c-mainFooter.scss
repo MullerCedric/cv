@@ -1,0 +1,14 @@
+.c-mainFooter {
+  color: $lightGray;
+  background: $lightBlack;
+  padding: 20px 0;
+  transition: color 0.4s ease;
+  border-top: 1px solid $darkerGray;
+
+  &__link {
+    color: $lightGray;
+    &:hover {
+      color: $white;
+    }
+  }
+}

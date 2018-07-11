@@ -1,0 +1,10 @@
+.c-header {
+  background-color: $beige;
+
+  &__logo {
+    display: inline-block;
+    width: 132px;
+    height: 94px;
+    margin: 20px 0;
+  }
+}

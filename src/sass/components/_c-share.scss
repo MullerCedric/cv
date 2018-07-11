@@ -1,0 +1,31 @@
+.c-share {
+  background-color: $grayishWhite;
+  border-top: 1px solid $lightGray;
+  margin: 0 -20px -20px;
+  color: $white;
+
+  &__name {
+    background-color: $brown;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'Bebas', 'Bebas Neue', sans-serif;
+    font-size: 20px;
+  }
+  &__ul, &__li {
+    display: inline-block;
+  }
+  &__network {
+    padding: 5px 9px;
+    margin: 0 12px 0 3px;
+    color: $white;
+    border-radius: 2px;
+
+    &:hover {
+      color: $white;
+    }
+    &--facebook {
+      background-color: $facebookBlue;
+    }
+  }
+}
