@@ -48,11 +48,11 @@
     }
   }
   &__a {
-    display: inline-block;
+    display: block;
     position: relative;
     color: $lightGray;
     padding: 13px 10px;
-    border-left: 1px solid $darkerGray; //à ajouter uniquement sur les liens principaux, pas les "subs"
+    border-left: 1px solid $darkerGray;
 
     &:hover {
       color: $white;
