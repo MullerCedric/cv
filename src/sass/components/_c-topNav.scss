@@ -27,6 +27,19 @@
     padding: 5px 10px;
     font-size: 12px;
   }
+  &__network {
+    padding: 5px 5px;
+    font-size: 12px;
+    color: $gray;
+    &:before {
+      content: "\e028";
+      display: inline-block;
+      font-family: 'Socicon', sans-serif;
+    }
+    &--rss:before {
+      content: "\e071";
+    }
+  }
 
   &__searchingForm {
     position: relative;

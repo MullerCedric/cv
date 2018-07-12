@@ -20,15 +20,26 @@
     margin: 0 12px 0 3px;
     color: $white;
     border-radius: 2px;
+    &:before {
+      content: "\e028";
+      display: inline-block;
+      font-family: 'Socicon', sans-serif;
+      margin-right: 4px;
+      color: $white;
+    }
 
     &:hover {
       color: $white;
     }
     &--facebook {
       background-color: $facebookBlue;
+
     }
     &--mail {
       background-color: $darkBrown;
+      &:before {
+        content: "\e050";
+      }
     }
   }
 }
