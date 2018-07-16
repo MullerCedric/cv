@@ -2,7 +2,7 @@ a {
   text-decoration: none;
   color: $brown;
 }
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
   color: $darkBrown;
 }

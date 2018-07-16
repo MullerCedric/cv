@@ -9,11 +9,11 @@
     position: relative;
 
     &-has-children {
-      &:hover > ul, &:focus > ul {
+      & a:hover + ul, & a:focus + ul {
         display: block;
         animation: fadeInDown .2s ease-in;
       }
-      &:hover > a:after {
+      & a:hover > a:after, & a:focus > a:after {
         content: "";
         position: absolute;
         left: 20px;
@@ -54,7 +54,7 @@
     padding: 13px 10px;
     border-left: 1px solid $darkerGray;
 
-    &:hover {
+    &:hover, &:focus {
       color: $white;
       text-decoration: none;
     }
